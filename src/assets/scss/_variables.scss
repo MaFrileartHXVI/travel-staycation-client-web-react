@@ -1,0 +1,60 @@
+$primary: #3252df;
+$primary-hover: #2a46c2;
+$gray-100: #f8f9fa;
+$gray-200: #e9ecef;
+$gray-400: #ced4da;
+$gray-500: #adb5bd;
+$gray-800: #343a40;
+$gray-900: #152c5b;
+$yellow: #ffcc47;
+$pink: #ff498b;
+$red: #e74c3c;
+$teal: #1abc9c;
+$white: #fff;
+$black: #000;
+
+$font-family-base: 'Poppins', sans-serif;
+$font-family-body: 'Inter', system-ui, -apple-system, sans-serif;
+
+$font-weight-light: 300;
+$font-weight-normal: 400;
+$font-weight-medium: 500;
+$font-weight-bold: 700;
+
+$spacing-xs: 4px;
+$spacing-sm: 8px;
+$spacing-md: 16px;
+$spacing-lg: 24px;
+$spacing-xl: 40px;
+$spacing-2xl: 60px;
+$spacing-3xl: 80px;
+
+$section-gap: 70px;
+
+$radius-sm: 4px;
+$radius-md: 8px;
+$radius-lg: 15px;
+
+$shadow-btn: 0 8px 15px rgba($primary, 0.3);
+$shadow-card: 0 0 20px rgba($black, 0.1);
+
+$transition-fast: 0.25s ease-in-out;
+$transition-base: 0.35s ease-in-out;
+$transition-slow: 0.5s ease-in-out;
+
+$input-height: 45px;
+$input-icon-size: 45px;
+$input-radius: $radius-sm;
+$input-bg: $gray-100;
+
+$hero-image-width: 520px;
+$hero-image-height: 410px;
+
+$testimonial-width: 365px;
+$testimonial-height: 500px;
+
+$header-height: 80px;
+$header-spacing: 20px;
+
+$stepper-size: 60px;
+$stepper-color: $gray-200;

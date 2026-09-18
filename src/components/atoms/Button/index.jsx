@@ -1,6 +1,5 @@
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
-
 export default function Button({
   type,
   onClick,
@@ -25,21 +24,26 @@ export default function Button({
     isLight && 'btn-light',
     isLarge && 'btn-lg',
     isSmall && 'btn-sm',
-    isBlock && 'btn-block',
+    isBlock && 'd-block w-100',
     hasShadow && 'btn-shadow',
   ]
     .filter(Boolean)
     .join(' ');
-
   if (isDisabled || isLoading) {
     return (
       <span
-        className={[classNameString, isDisabled && 'disabled'].filter(Boolean).join(' ')}
+        className={[classNameString, isDisabled && 'disabled']
+          .filter(Boolean)
+          .join(' ')}
         style={style}
       >
         {isLoading ? (
           <>
-            <span className="spinner-border spinner-border-sm mx-5" role="status" aria-hidden="true" />
+            <span
+              className="spinner-border spinner-border-sm mx-5"
+              role="status"
+              aria-hidden="true"
+            />
             <span className="sr-only">Loading...</span>
           </>
         ) : (
@@ -48,7 +52,6 @@ export default function Button({
       </span>
     );
   }
-
   if (type === 'link') {
     if (isExternal) {
       return (
@@ -63,7 +66,6 @@ export default function Button({
         </a>
       );
     }
-
     return (
       <Link
         to={href}
@@ -75,18 +77,12 @@ export default function Button({
       </Link>
     );
   }
-
   return (
-    <button
-      className={classNameString}
-      style={style}
-      onClick={onClick}
-    >
+    <button className={classNameString} style={style} onClick={onClick}>
       {children}
     </button>
   );
 }
-
 Button.propTypes = {
   type: PropTypes.oneOf(['button', 'link']),
   onClick: PropTypes.func,

@@ -1,0 +1,35 @@
+.input-number {
+  .input-group {
+    background-color: $white;
+    .input-group-text {
+      border: 0;
+      cursor: pointer;
+      color: $white;
+      padding: 0;
+      border-radius: $input-radius !important;
+      font-size: 24px;
+      width: $input-icon-size;
+      height: $input-height;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      user-select: none;
+      &.minus {
+        background-color: $red;
+      }
+      &.plus {
+        background-color: $teal;
+      }
+    }
+    input.form-control {
+      min-height: $input-height;
+      border: 0;
+      border-radius: 0;
+      outline: 0;
+      box-shadow: none;
+      background-color: $input-bg;
+      padding: 0.575rem 1rem;
+      text-align: center;
+    }
+  }
+}

@@ -1,0 +1,43 @@
+.input-date {
+  .input-group {
+    background-color: $white;
+    position: relative;
+    .input-group-text {
+      pointer-events: none;
+      border: 0;
+      cursor: pointer;
+      padding: 0;
+      border-radius: $input-radius !important;
+      width: $input-icon-size;
+      height: $input-height;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: $gray-900;
+      position: absolute;
+      z-index: 999;
+    }
+    .form-control {
+      border: 0;
+      border-radius: $input-radius;
+      outline: 0;
+      box-shadow: none;
+      background-color: $input-bg;
+      padding: 0.575rem $input-icon-size;
+      text-align: center;
+      justify-content: center;
+      width: 100%;
+      height: $input-height;
+      cursor: pointer;
+    }
+    .date-range-wrapper {
+      padding: $spacing-xs;
+      background-color: $white;
+      box-shadow: $shadow-card;
+      position: absolute;
+      border-radius: $input-radius;
+      top: $input-height;
+      z-index: 5;
+    }
+  }
+}

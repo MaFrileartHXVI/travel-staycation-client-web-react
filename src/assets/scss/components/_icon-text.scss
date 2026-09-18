@@ -1,0 +1,14 @@
+.brand-text-icon {
+  font-size: 26px;
+  font-weight: $font-weight-medium;
+  font-family: $font-family-base;
+  color: $primary;
+  text-decoration: none;
+  &:hover {
+    text-decoration: none;
+    color: $primary;
+  }
+  .text-gray-900 {
+    color: $gray-900;
+  }
+}

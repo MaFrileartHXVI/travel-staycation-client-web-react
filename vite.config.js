@@ -14,5 +14,13 @@ export default defineConfig({
     globals: true,
     environment: 'jsdom',
     setupFiles: ['./src/setupTests.js'],
+  },
+  css: {
+    preprocessorOptions: {
+      scss: {
+        api: 'modern-compiler',
+        silenceDeprecations: ["import", "global-builtin", "color-functions", "mixed-decls", "if-function", "legacy-js-api"]
+      }
+    }
   }
 })

@@ -1,18 +1,15 @@
 .btn {
-  font-weight: 500;
-  
+  font-weight: $font-weight-medium;
   &.btn-primary {
-    background-color: #3252DF;
-    border-color: #3252DF;
-    color: #fff;
-
+    background-color: $primary;
+    border-color: $primary;
+    color: $white;
     &:hover {
-      background-color: #2a46c2;
-      border-color: #2a46c2;
+      background-color: $primary-hover;
+      border-color: $primary-hover;
     }
   }
-
   &.btn-shadow {
-    box-shadow: 0px 8px 15px rgba(50, 82, 223, 0.3) !important;
+    box-shadow: $shadow-btn !important;
   }
 }
